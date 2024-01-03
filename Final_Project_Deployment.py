@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 #Import data
-pickle_in = open(pickle_in = open('bayuafrizal/final_project_matchprimerleague/model.pkl', 'rb')
+pickle_in = open('bayuafrizal/final_project_matchprimerleague/model.pkl', 'rb')
 classifier = pickle.load(pickle_in) 
 
 #Data Preprocessing
