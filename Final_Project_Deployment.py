@@ -3,7 +3,7 @@ import pickle
 import streamlit as st
 
 #Import data
-pickle_in = open('model.pkl', 'rb')
+pickle_in = open('model.pkl' ,'rb') 
 classifier = pickle.load(pickle_in)
 
 #Data Preprocessing
@@ -93,8 +93,3 @@ opp_code=st.selectbox('Pilih Lawan',['Arsenal','Aston Villa','Brentford','Bright
 if st.button('Prediksi hasil'):
     result = prediction(xg,xga,venue_code,sh,sot,poss,dist,attendance,fk,pkatt,opp_code)
     st.success(f'Hasilnya adalah {result}')
-
-
-
-
-
