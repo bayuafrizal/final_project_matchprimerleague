@@ -3,8 +3,8 @@ import pickle
 import streamlit as st
 
 #Import data
-pickle_in = open('model.pkl', 'rb') 
-classifier = pickle.load(pickle_in)
+pickle_in = open(pickle_in = open('bayuafrizal/final_project_matchprimerleague/model.pkl', 'rb')
+classifier = pickle.load(pickle_in) 
 
 #Data Preprocessing
 def prediction(xg,xga,venue_code,sh,sot,poss,dist,attendance,fk,pkatt,opp_code):
