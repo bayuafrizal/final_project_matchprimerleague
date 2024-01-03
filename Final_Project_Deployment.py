@@ -6,14 +6,6 @@ import streamlit as st
 pickle_in = open('model.pkl' ,'rb') 
 classifier = pickle.load(pickle_in)
 
-# Load the trained model
-#model_filename = 'model.pkl'
-#try:
-    #with open(model_filename, 'rb') as file:
-        #classifier = pickle.load(file)
-#except Exception as e:
-    #st.error(f"An error occurred while loading the model: {str(e)}")
-
 #Data Preprocessing
 def prediction(xg,xga,venue_code,sh,sot,poss,dist,attendance,fk,pkatt,opp_code):
     if opp_code == 'Arsenal':
